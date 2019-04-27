@@ -1,6 +1,16 @@
-# TODO: Write documentation for `Dcode`
-module Dcode
-  VERSION = "0.1.0"
+require "kemal"
 
-  # TODO: Put your code here
+get "/" do |env|
+  env.params.url["name"] = "guest"
+  name = env.params.url["name"]
+  render "src/views/index.ecr"
 end
+
+get "/:name" do |env|
+  name = env.params.url["name"]
+  puts name.class
+  puts name
+  render "src/views/index.ecr"
+end
+
+Kemal.run
