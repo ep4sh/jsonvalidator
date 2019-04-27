@@ -1,17 +1,13 @@
-name: dcode
+name: jsonvalidator
 version: 0.1.0
 
 authors:
   - ep4sh <ep4sh2k@gmail.com>
 
 targets:
-  dcode:
-    main: src/dcode.cr
+  jsonvalidator:
+    main: src/jsonvalidator.cr
 
 crystal: 0.28.0
 
 license: MIT
-
-dependencies:
-  kemal:
-    github: kemalcr/kemal

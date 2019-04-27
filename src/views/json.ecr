@@ -31,8 +31,8 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- 
- <div class="container">
+  <div class="container">
+
     <div class="row">
       <div class="one-half column">
         <h4>
@@ -55,8 +55,19 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="twelve column">
+            <%- if valid_flag == 1 -%>
+                <h5 style="color: green"> Valid! </h5>
+            <%- else -%>
+                <h5 style="color: red"> Invalid!  </h5>
+                <p style="font-style: oblique; color: red"> <%= err_msg %> </p>
+            <%- end -%>
+        </div>
+    </div>
 
   </div>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
