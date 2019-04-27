@@ -22,4 +22,8 @@ post "/json_validate" do |env|
   render "src/views/json.ecr"
 end
 
+get "/v" do |env|
+  version = "0.1.0"
+end
+
 Kemal.run
