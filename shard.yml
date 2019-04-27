@@ -8,6 +8,14 @@ targets:
   jsonvalidator:
     main: src/jsonvalidator.cr
 
+dependencies:
+  spec-kemal:
+    github: kemalcr/spec-kemal
+    branch: master
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+
 crystal: 0.28.0
 
 license: MIT
