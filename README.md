@@ -1,22 +1,22 @@
-# jsonvalidator
+# Json Validator
 
-TODO: Write a description here
+Very simple JSON validator with [Kemal](https://github.com/sdogruyol/kemal) and [Skeleton](http://getskeleton.com)
 
 ## Installation
 
-TODO: Write installation instructions here
+```
+git clone https://github.com/ep4sh/jsonvalidator
+cd jsonvalidator && shards install
+crystal run src/jsonvalidator.cr
+```
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
+Go to `http://localhost:1502/` to see it in action.
+![Kemal Chat Gif](/images/JSONValidator.png)
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/jsonvalidator/fork>)
+1. Fork it (<https://github.com/ep4sh/jsonvalidator/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -24,4 +24,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [ep4sh](https://github.com/your-github-user) - creator and maintainer
+- [ep4sh](https://github.com/ep4sh) - creator and maintainer

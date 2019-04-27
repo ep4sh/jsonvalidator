@@ -1,6 +1,6 @@
 require "kemal"
 require "../src/validate"
-
+Kemal.config.port = 1502
 host = Kemal.config.host_binding
 err_msg = ""
 
