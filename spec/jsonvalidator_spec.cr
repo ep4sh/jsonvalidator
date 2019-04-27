@@ -1,9 +1,8 @@
 require "./spec_helper"
 
-describe Jsonvalidator do
-  # TODO: Write tests
-
-  it "works" do
-    false.should eq(true)
+describe "JSONValidator" do
+  it "renders /v" do
+    get "/v"
+    response.body.should eq "0.1.0"
   end
 end

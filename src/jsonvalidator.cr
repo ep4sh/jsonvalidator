@@ -3,6 +3,7 @@ require "../src/validate"
 Kemal.config.port = 1502
 host = Kemal.config.host_binding
 err_msg = ""
+version = "0.1.0"
 
 get "/" do |env|
   env.params.url["name"] = "guest"
@@ -23,7 +24,7 @@ post "/json_validate" do |env|
 end
 
 get "/v" do |env|
-  version = "0.1.0"
+  version
 end
 
 Kemal.run
