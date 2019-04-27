@@ -1,4 +1,4 @@
-# Json Validator
+# Json Validator [![Build Status](https://travis-ci.org/ep4sh/jsonvalidator.svg?branch=master)](https://travis-ci.org/ep4sh/jsonvalidator)
 
 Very simple JSON validator with [Kemal](https://github.com/sdogruyol/kemal) and [Skeleton](http://getskeleton.com)
 
