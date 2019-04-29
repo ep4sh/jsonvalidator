@@ -25,7 +25,9 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -49,14 +51,14 @@
                   <textarea class="u-full-width" placeholder="Put your JSON-object" name="jsonObj" id="jsonObj"></textarea>
                 </div>
                 <div class="one-half column">
-                  <input class="button-primary" type="submit" value="Validate JSON">
+                  <input class="button-primary" id="validate" type="submit" value="Validate JSON">
                 </div>
             </form>
         </div>
     </div>
 
     <div class="row">
-        <div class="twelve column">
+        <div class="twelve column" id="payload">
             <%- if valid_flag == 1 -%>
                 <h5 style="color: green"> Valid! </h5>
             <%- else -%>

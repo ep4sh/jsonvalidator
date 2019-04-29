@@ -25,7 +25,10 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/ajax.js"></script>
 </head>
 <body>
 
@@ -36,25 +39,37 @@
     <div class="row">
       <div class="one-half column">
         <h4>
-          <a class="button" href="/">JSON Validator</a>
+          <a class="button" href="/" id="btn">JSON Validator</a>
         </h4>
       </div>
     </div>
 
     <div class="row">
         <div class="one-half column">
-            <form action="json_validate" method="POST">
+            <form  action="/a" method="POST">
                 <div class="row">
                   <label for="JSON">JSON object:</label>
                   <textarea class="u-full-width" placeholder="Put your JSON-object" name="jsonObj" id="jsonObj"></textarea>
                 </div>
                 <div class="one-half column">
-                  <input class="button-primary" type="submit" value="Validate JSON">
+                  <input class="button-primary" id="validate" type="button" value="Validate JSON">
                 </div>
             </form>
         </div>
     </div>
 
+    <%- if exist_flag == 1 -%>
+    <div class="row">
+        <div class="twelve column" id="payload">
+            <%- if valid_flag == 1 -%>
+                <h5 style="color: green"> Valid! </h5>
+            <%- else -%>
+                <h5 style="color: red"> Invalid!  </h5>
+                <p style="font-style: oblique; color: red"> <%= err_msg %> </p>
+            <%- end -%>
+        </div>
+    </div>
+    <%- end -%>
 
   </div>
 <!-- End Document
